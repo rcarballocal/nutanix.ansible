@@ -2,7 +2,8 @@
 - name: Inputs for vm task
   include_tasks: vm.yml
   with_items:
-    - {name: "Prod-Wordpress-App", desc: "Prod-Wordpress-App", is_connected: True, subnet_name: Prod-SubnetA, image_name: "wordpress-appserver", private_ip: ""}
-    - {name: "Prod-Wordpress-DB", desc: "Prod-Wordpress-DB", is_connected: True, subnet_name: Prod-SubnetB, image_name: "wordpress-db", private_ip: 10.1.2.5}
-    - {name: "Dev-Wordpress-App", desc: "Dev-Wordpress-App", is_connected: True, subnet_name: Dev-SubnetA, image_name: "wordpress-appserver", private_ip: ""}
-    - {name: "Dev-Wordpress-DB", desc: "Dev-Wordpress-DB", is_connected: True, subnet_name: Dev-SubnetB, image_name: "wordpress-db", private_ip: 10.1.2.5}
+    - {name: "Ruben_test_Ansible-2", desc: "Ruben Ansible test", is_connected: True, subnet_name: "1001", image_name: "Ubuntu Server 20.04", private_ip: ""}
+    # - {name: "Ruben_test_Ansible", desc: "Ruben Ansible test", is_connected: True, subnet_name: "1001", image_name: "Ubuntu Server 20.04", private_ip: ""}
+    # - {name: "Prod-Wordpress-DB", desc: "Prod-Wordpress-DB", is_connected: True, subnet_name: Prod-SubnetB, image_name: "wordpress-db", private_ip: 10.1.2.5}
+    # - {name: "Dev-Wordpress-App", desc: "Dev-Wordpress-App", is_connected: True, subnet_name: Dev-SubnetA, image_name: "wordpress-appserver", private_ip: ""}
+    # - {name: "Dev-Wordpress-DB", desc: "Dev-Wordpress-DB", is_connected: True, subnet_name: Dev-SubnetB, image_name: "wordpress-db", private_ip: 10.1.2.5}

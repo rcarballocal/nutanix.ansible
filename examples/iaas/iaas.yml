@@ -6,18 +6,18 @@
     - nutanix.ncp    
   module_defaults:
     group/nutanix.ncp.ntnx:
-      nutanix_host: <host_ip>
-      nutanix_username: <user>
-      nutanix_password: <pass>
+      nutanix_host: 10.10.88.50
+      nutanix_username: admin
+      nutanix_password: P),kO0y>@f+GhF40[dc5
       validate_certs: false
   tasks:
-    - include_role:
-        name: external_subnet
-    - include_role:
-        name: vpc
-    - include_role:
-        name: overlay_subnet
+    # - include_role:
+    #     name: external_subnet
+    # - include_role:
+    #     name: vpc
+    # - include_role:
+    #     name: overlay_subnet
     - include_role:
         name: vm
-    - include_role:
-        name: fip
+    # - include_role:
+    #     name: fip
