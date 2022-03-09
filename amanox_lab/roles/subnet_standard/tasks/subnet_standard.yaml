@@ -1,0 +1,16 @@
+---
+- name: Create {{item.name}} subnet
+  ntnx_subnets:
+    state: present
+    name: "{{ item.name }}"
+    vlan_subnet:
+      vlan_id: "{{ item.vlan_id }}"
+      cluster: 
+        name: "{{ cluster.name }}"
+      virtual_switch:
+        name: "{{item.v_switch }}"
+  register: subnet_standard
+- debug:
+      msg:
+        - "name: Subnet"
+        - "uuid: {{ subnet_standard.subnet_uuid }}"

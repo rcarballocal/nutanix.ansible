@@ -1,0 +1,4 @@
+---
+# vars file for subnet_standard
+cluster:
+  name: nx13
