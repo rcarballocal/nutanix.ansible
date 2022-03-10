@@ -2,4 +2,4 @@
 - name: Inputs for standard subnets task
   include_tasks: subnet_standard.yaml
   with_items:
-    - { name: Ext-Nat, vlan_id: 102, v_switch: "vs0"}
+    - { name: Ruben_Ansible_test, vlan_id: 102, v_switch: "vs0"}
